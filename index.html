@@ -71,7 +71,7 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#workwithus">
-            Work with us
+            Get in touch
           </a>
         </li>
       </ul>
@@ -88,6 +88,9 @@
         <div class="col-lg-7 py-vh-6 position-relative" data-aos="fade-right">
           <h1 class="display-3 fw-bold mt-5">Anthony Naccarato</h1>
           <p class="lead">Anthony Naccarato is a real estate investor with a focus on flipping and rental properties in Utah and Florida. Anthony has established a reputation for acquiring and rehabilitating properties to improve their value and appeal, with a focus on delivering value to investors and improving communities.</p>
+          <a class="btn btn-dark btn-xl shadow me-3 rounded-0 my-5" href="#workwithus">
+            Get in touch
+          </a>
         </div>
       </div>
     </div>
@@ -133,7 +136,11 @@
               <h2 class="display-6 mb-5" data-aos="fade-down">I am looking to partner and build our network of private lenders and team members.</h2>
               </div>
             <div class="col-12" data-aos="fade-up">
-              <p class="text-black-70">Our goal is to complete 2 transactions over the next 10 months and hiring an acquisitions manager and general contractors to continue building out our team.</p>
+              <p class="text-black-70">Our goal is to complete 2 transactions over the next 10 months and hiring an acquisitions manager and general contractors to continue building out our team.
+                <a class="nav-link" href="#workwithus">
+                  Get in touch
+                </a>
+              </p>
             </div>
           </div>
         </div>
@@ -161,20 +168,26 @@
         <div class="row">
           <div class="row">
             <div class="col">
-              <form class="row" netlify>
+
+              <form class="row" name="contact" method="post" data-netlify="true">
                 <div class="col-12 col-lg-10 col-xl-8">
                   <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label" name="name">Name</label>
-                    <input type="name" class="form-control form-control-lg p-3" id="exampleInputPassword1">
+                    <label for="exampleInputPassword1" class="form-label">Name</label>
+                    <input type="text" name="name" class="form-control form-control-lg p-3" id="exampleInputPassword1">
                   </div>
                   <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label" name="email">Email address</label>
-                    <input type="email" class="form-control form-control-lg p-3" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" name="email" class="form-control form-control-lg p-3" id="exampleInputEmail1" aria-describedby="emailHelp">
                     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputMessage" class="form-label">Message</label>
+                    <textarea type="text" name="message" class="form-control form-control-lg p-3" id="exampleInputMessage"></textarea>
                   </div>
                   <button type="submit" class="btn btn-primary btn-xl">Submit</button>
                 </div>
               </form>
+
             </div>
           </div>
         </div>
