@@ -136,8 +136,9 @@
               <h2 class="display-6 mb-5" data-aos="fade-down">I am looking to partner and build our network of private lenders and team members.</h2>
               </div>
             <div class="col-12" data-aos="fade-up">
-              <p class="text-black-70">Our goal is to complete 2 transactions over the next 10 months and hiring an acquisitions manager and general contractors to continue building out our team.
-                <a class="nav-link" href="#workwithus">
+              <p class="text-black-70">Our goal is to complete 2 transactions over the next 10 months and hiring an acquisitions manager and general contractors to continue building out our team.</p>
+              <p>
+                <a class="link-fancy" href="#workwithus">
                   Get in touch
                 </a>
               </p>
@@ -169,8 +170,13 @@
           <div class="row">
             <div class="col">
 
-              <form class="row" name="contact" method="post" data-netlify="true">
+              <form class="row" name="contact" method="post" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true">
                 <div class="col-12 col-lg-10 col-xl-8">
+                  <div class="hidden">
+                    <label>
+                      Don’t fill this out if you’re human: <input name="bot-field" />
+                    </label>
+                  </div>
                   <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Name</label>
                     <input type="text" name="name" class="form-control form-control-lg p-3" id="exampleInputPassword1">
@@ -184,6 +190,7 @@
                     <label for="exampleInputMessage" class="form-label">Message</label>
                     <textarea type="text" name="message" class="form-control form-control-lg p-3" id="exampleInputMessage"></textarea>
                   </div>
+                  <div data-netlify-recaptcha="true"></div>
                   <button type="submit" class="btn btn-primary btn-xl">Submit</button>
                 </div>
               </form>
