@@ -251,13 +251,17 @@
         <div class="grouped-inputs border bg-light p-2">
           <div class="row">
             <div class="col">
-              <form class="form-floating">
-                <input type="email" class="form-control p-3" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Email address</label>
+              <form class="form-floating" name="contact" netlify>
+                  <p>
+                    <label>Name <input type="text" name="name" class="form-control p-3" id="floatingInput" /></label>
+                  </p>
+                  <p>
+                    <label>Email <input type="email" name="email" class="form-control p-3" id="floatingInput" /></label>
+                  </p>
+                  <p>
+                    <button type="submit" class="btn btn-dark py-3 px-5">Send</button>
+                  </p>
               </form>
-            </div>
-            <div class="col-auto">
-              <a href="#" class="btn btn-dark py-3 px-5">Subscribe</a>
             </div>
           </div>
         </div>
@@ -278,9 +282,7 @@
   </svg>
   <address class="text-secondary mt-3">
     <strong>N21 Investments</strong><br>
-    
     Anthony Naccarato<br>
-    San Francisco, CA 94103<br>
     <abbr title="Phone">P:</abbr>
     (801) 618-0849
   </address>
